@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="hibpack">
+	<class name="Contact" table="ContactTable">
+		<id name="id" column="ContactId">
+			<generator class="assigned" />
+		</id>
+		<property name="firstName" />
+		<property name="lastName" column="LastName" />
+		<property name="email" column="Email" />
+	</class>
+</hibernate-mapping>
